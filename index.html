@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Task Tracker</h1>
+      <p>Iteration 1: Basic task creation, listing, deletion, and localStorage.</p>
+    </header>
+
+    <section class="card">
+      <h2>Add New Task</h2>
+
+      <form id="taskForm">
+        <label for="taskTitle">Task Title</label>
+        <input type="text" id="taskTitle" placeholder="Enter task title" />
+
+        <label for="taskDescription">Description</label>
+        <textarea id="taskDescription" placeholder="Enter task description"></textarea>
+
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Task List</h2>
+      <div id="taskList" class="task-list"></div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
