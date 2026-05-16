@@ -8,29 +8,75 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header class="header">
       <h1>Task Tracker</h1>
-      <p>Iteration 1: Basic task creation, listing, deletion, and localStorage.</p>
+      <p>Iteration 2: Improved task management with editing, status tracking, filtering, validation, and assigned users.</p>
     </header>
 
-    <section class="card">
-      <h2>Add New Task</h2>
+    <main class="main-grid">
+      <section class="card">
+        <h2 id="formTitle">Create New Task</h2>
 
-      <form id="taskForm">
-        <label for="taskTitle">Task Title</label>
-        <input type="text" id="taskTitle" placeholder="Enter task title" />
+        <div id="errorMessage" class="error-message">
+          Please enter a task title.
+        </div>
 
-        <label for="taskDescription">Description</label>
-        <textarea id="taskDescription" placeholder="Enter task description"></textarea>
+        <form id="taskForm">
+          <label for="taskTitle">Task Title</label>
+          <input type="text" id="taskTitle" placeholder="Enter task title" />
 
-        <button type="submit">Add Task</button>
-      </form>
-    </section>
+          <label for="taskDescription">Description</label>
+          <textarea id="taskDescription" placeholder="Enter task description"></textarea>
 
-    <section class="card">
-      <h2>Task List</h2>
-      <div id="taskList" class="task-list"></div>
-    </section>
+          <label for="assignedUser">Assigned To</label>
+          <input type="text" id="assignedUser" placeholder="Example: Member 1" />
+
+          <label for="taskStatus">Status</label>
+          <select id="taskStatus">
+            <option value="To Do">To Do</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Done">Done</option>
+          </select>
+
+          <div class="button-row">
+            <button type="submit" id="submitBtn" class="primary-btn">Add Task</button>
+            <button type="button" id="cancelEditBtn" class="secondary-btn hidden">Cancel</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="card">
+        <div class="task-header-row">
+          <h2>Task List</h2>
+
+          <select id="statusFilter">
+            <option value="All">All Tasks</option>
+            <option value="To Do">To Do</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Done">Done</option>
+          </select>
+        </div>
+
+        <div class="stats">
+          <div class="stat-box">
+            <strong id="todoCount">0</strong>
+            <span>To Do</span>
+          </div>
+
+          <div class="stat-box">
+            <strong id="progressCount">0</strong>
+            <span>In Progress</span>
+          </div>
+
+          <div class="stat-box">
+            <strong id="doneCount">0</strong>
+            <span>Done</span>
+          </div>
+        </div>
+
+        <div id="taskList" class="task-list"></div>
+      </section>
+    </main>
   </div>
 
   <script src="app.js"></script>
