@@ -127,6 +127,7 @@ Examples of GitHub tasks include:
 - Improve task management with status, editing and filtering
 - Update README with project details and run instructions
 - Add user stories and test plan
+- Add iteration plan documentation
 
 Pull requests were used to review changes before merging them into the `main` branch.
 
