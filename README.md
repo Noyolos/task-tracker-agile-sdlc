@@ -10,8 +10,8 @@ The project demonstrates the use of Agile SDLC, iterative and incremental develo
 
 | Name | Role / Responsibility |
 |---|---|
-| [TAN LE PIN] | Core development, GitHub repository setup, Iteration 1 and Iteration 2 implementation |
-| [DHINESH] | Documentation, user stories, test plan, GitHub collaboration |
+| TAN LE PIN | GitHub repository setup, core application development, Iteration 1 implementation, Iteration 2 implementation, version tagging, pull request merging, and final project coordination |
+| DHINESH | README documentation, user stories, test plan, iteration plan documentation, pull request submission, and GitHub collaboration |
 
 ## Technologies Used
 
