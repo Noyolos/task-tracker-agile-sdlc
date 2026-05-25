@@ -20,7 +20,7 @@ let editingTaskId = null;
 */
 tasks = tasks.map((task) => ({
   ...task,
-  assignedTo: task.assignedTo || "Unassigned",
+  assignedTo: task.assignedTo || "Unassigned Staff",
   status: task.status || "To Do",
   createdAt: task.createdAt || new Date().toLocaleDateString()
 }));
@@ -66,7 +66,7 @@ function renderTasks() {
   if (filteredTasks.length === 0) {
     const emptyState = document.createElement("div");
     emptyState.className = "empty-state";
-    emptyState.textContent = "No tasks found. Create a new task or change the filter.";
+    emptyState.textContent = "No restaurant tasks found. Create a new task or change the filter.";
     taskList.appendChild(emptyState);
     updateStats();
     return;
@@ -87,7 +87,7 @@ function renderTasks() {
 
     const meta = document.createElement("div");
     meta.className = "task-meta";
-    meta.textContent = `Assigned to: ${task.assignedTo || "Unassigned"} | Created: ${task.createdAt}`;
+    meta.textContent = `Assigned staff: ${task.assignedTo || "Unassigned Staff"} | Created: ${task.createdAt}`;
 
     taskInfo.appendChild(title);
     taskInfo.appendChild(meta);
@@ -101,7 +101,7 @@ function renderTasks() {
 
     const description = document.createElement("div");
     description.className = "task-desc";
-    description.textContent = task.description || "No description provided.";
+    description.textContent = task.description || "No details provided.";
 
     const actions = document.createElement("div");
     actions.className = "task-actions";
@@ -151,7 +151,7 @@ function resetForm() {
   editingTaskId = null;
   taskForm.reset();
   taskStatus.value = "To Do";
-  formTitle.textContent = "Create New Task";
+  formTitle.textContent = "Create Restaurant Task";
   submitBtn.textContent = "Add Task";
   cancelEditBtn.classList.add("hidden");
   errorMessage.style.display = "none";
@@ -171,7 +171,7 @@ function editTask(id) {
   assignedUser.value = task.assignedTo;
   taskStatus.value = task.status;
 
-  formTitle.textContent = "Edit Task";
+  formTitle.textContent = "Edit Restaurant Task";
   submitBtn.textContent = "Update Task";
   cancelEditBtn.classList.remove("hidden");
 }
@@ -216,7 +216,7 @@ taskForm.addEventListener("submit", function (event) {
           ...task,
           title: taskTitle.value.trim(),
           description: taskDescription.value.trim(),
-          assignedTo: assignedUser.value.trim() || "Unassigned",
+          assignedTo: assignedUser.value.trim() || "Unassigned Staff",
           status: taskStatus.value
         };
       }
@@ -228,7 +228,7 @@ taskForm.addEventListener("submit", function (event) {
       id: Date.now(),
       title: taskTitle.value.trim(),
       description: taskDescription.value.trim(),
-      assignedTo: assignedUser.value.trim() || "Unassigned",
+      assignedTo: assignedUser.value.trim() || "Unassigned Staff",
       status: taskStatus.value,
       createdAt: new Date().toLocaleDateString()
     };
