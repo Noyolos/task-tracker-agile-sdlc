@@ -28,10 +28,10 @@ This project was developed for the **BAI21113 Software Engineering Assignment**.
 
 ## 👥 Team Members and Roles
 
-| Name | Role / Responsibility |
-|---|---|
-| TAN LE PIN | GitHub repository setup, core application development, Iteration 1 implementation, Iteration 2 implementation, version tagging, pull request merging, and final project coordination |
-| DHINESH | README documentation, user stories, test plan, iteration plan documentation, pull request submission, and GitHub collaboration |
+| Name | Scrum Role | Role / Responsibility |
+|---|---|---|
+| TAN LE PIN | Scrum Master / Developer | Coordinated GitHub workflow, managed branches and version tags, implemented the core application features, supported pull request merging, and coordinated the final submission. |
+| DHINESH | Product Owner / Documentation Contributor | Defined and refined user stories, clarified restaurant task tracker requirements, prepared README, test plan, and iteration documentation, and checked that the system matched the assignment scope. |
 
 ---
 
@@ -228,6 +228,16 @@ cd Restaurant-Operations-Task-Tracker
 ## 📊 Scrum Process Summary
 
 The team selected **Scrum** as the Agile SDLC methodology. Scrum was suitable because the project could be divided into short development iterations, with each iteration delivering a working increment.
+
+**Scrum Roles Applied**
+
+Because the project team was small, some members handled more than one Scrum responsibility. The team used the following role structure:
+
+| Scrum Role | Assigned Member | Responsibility in This Project |
+|---|---|---|
+| Product Owner | DHINESH | Clarified user stories, documented acceptance criteria, and checked that the task tracker matched the restaurant operations scenario. |
+| Scrum Master | TAN LE PIN | Coordinated the two-iteration workflow, GitHub branches, pull requests, tags, and progress tracking. |
+| Developer | TAN LE PIN and DHINESH | Implemented application features, prepared documentation, tested the system, and reviewed project deliverables. |
 
 **Scrum Artifacts**
 
