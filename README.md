@@ -28,10 +28,10 @@ This project was developed for the **BAI21113 Software Engineering Assignment**.
 
 ## 👥 Team Members and Roles
 
-| Name | Scrum Role | Role / Responsibility |
-|---|---|---|
-| TAN LE PIN | Scrum Master / Developer | Coordinated GitHub workflow, managed branches and version tags, implemented the core application features, supported pull request merging, and coordinated the final submission. |
-| DHINESH | Product Owner / Documentation Contributor | Defined and refined user stories, clarified restaurant task tracker requirements, prepared README, test plan, and iteration documentation, and checked that the system matched the assignment scope. |
+| Name | Student ID | Scrum Role | Role / Responsibility |
+|---|---|---|---|
+| TAN LE PIN | BAI_B2009F-2505001 | Scrum Master / Developer | Coordinated GitHub workflow, managed branches and version tags, implemented the core application features, supported pull request merging, and coordinated the final submission. |
+| DHINESH | BAI_A2009F-2509008 | Product Owner / Documentation Contributor | Defined and refined user stories, clarified restaurant task tracker requirements, prepared README, test plan, and iteration documentation, and checked that the system matched the assignment scope. |
 
 ---
 
